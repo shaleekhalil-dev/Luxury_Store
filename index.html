@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Glass Store | متجر الفخامة الزجاجي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="glass-nav">
+        <div class="logo">LUXURY <span>GLASS</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#store">المتجر</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <div class="cart-wrapper" onclick="toggleCart()">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-badge">0</span>
+            </div>
+            <button class="contact-btn-nav"><i class="fas fa-phone-alt"></i> اتصل بنا</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-glass-card">
+                <div class="glow-orb"></div>
+                <span class="sale-badge">خصم 30% لفترة محدودة</span>
+                <h1>أناقة زجاجية بلمسة بنية فاخرة</h1>
+                <p>اكتشفي تشكيلتنا المختارة بعناية لأرقى بيوت الأزياء العالمية.</p>
+                <a href="#store" class="main-cta">اكتشفي الآن</a>
+            </div>
+        </section>
+
+        <section id="store" class="sections-grid">
+            <h2 class="title-glow">أقسامنا الثمانية المختارة</h2>
+            <div class="container">
+                <div class="item-card glass-morph shine-effect">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=500" alt="صيفي">
+                    <div class="card-info"><h3>التشكيلة الصيفية</h3><button onclick="addToCart()">أضف للسلة</button></div>
+                </div>
+                <div class="item-card glass-morph shine-effect">
+                    <img src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?q=80&w=500" alt="شتوي">
+                    <div class="card-info"><h3>أزياء الشتاء</h3><button onclick="addToCart()">أضف للسلة</button></div>
+                </div>
+                <div class="item-card glass-morph shine-effect">
+                    <img src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?q=80&w=500" alt="أطفال">
+                    <div class="card-info"><h3>ركن الأطفال</h3><button onclick="addToCart()">أضف للسلة</button></div>
+                </div>
+                <div class="item-card glass-morph shine-effect">
+                    <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?q=80&w=500" alt="ستاتي">
+                    <div class="card-info"><h3>أزياء ستاتي فاخرة</h3><button onclick="addToCart()">أضف للسلة</button></div>
+                </div>
+                <div class="item-card glass-morph shine-effect">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=500" alt="أحذية">
+                    <div class="card-info"><h3>قسم الأحذية</h3><button onclick="addToCart()">أضف للسلة</button></div>
+                </div>
+                <div class="item-card glass-morph shine-effect">
+                    <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=500" alt="حقائب">
+                    <div class="card-info"><h3>حقائب يد فاخرة</h3><button onclick="addToCart()">أضف للسلة</button></div>
+                </div>
+                <div class="item-card glass-morph shine-effect">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=500" alt="إكسسوارات">
+                    <div class="card-info"><h3>إكسسوارات راقية</h3><button onclick="addToCart()">أضف للسلة</button></div>
+                </div>
+                <div class="item-card glass-morph shine-effect">
+                    <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=500" alt="فساتين">
+                    <div class="card-info"><h3>فساتين سهرة</h3><button onclick="addToCart()">أضف للسلة</button></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-area">
+            <div class="glass-form-container">
+                <h2>تواصلِ معنا</h2>
+                <form action="#">
+                    <input type="text" placeholder="الاسم الكامل" class="glass-input">
+                    <input type="email" placeholder="البريد الإلكتروني" class="glass-input">
+                    <textarea placeholder="رسالتكِ هنا..." class="glass-input"></textarea>
+                    <button type="submit" class="submit-btn">إرسال الاستفسار</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        <p>جميع الحقوق محفوظة © 2026 - متجر الفخامة</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
